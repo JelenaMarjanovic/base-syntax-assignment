@@ -5,6 +5,10 @@ import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
+  state = {
+    username: 'Max'
+  };
+
   render() {
     return (
       <div className="App">
@@ -47,9 +51,9 @@ class App extends Component {
         </ol>
 
         <UserInput />
-        <UserOutput userName="Max" />
-        <UserOutput userName="Max" />
-        <UserOutput userName="Max" />
+        <UserOutput userName={this.state.username} />
+        <UserOutput userName={this.state.username} />
+        <UserOutput userName={this.state.username} />
       </div>
     );
   }
