@@ -56,7 +56,10 @@ class App extends Component {
           </li>
         </ol>
 
-        <UserInput changed={this.usernameChangedHandler} />
+        <UserInput
+          currentUsername={this.state.username}
+          changed={this.usernameChangedHandler}
+        />
         <UserOutput userName={this.state.username} />
         <UserOutput userName={this.state.username} />
         <UserOutput userName={this.state.username} />
