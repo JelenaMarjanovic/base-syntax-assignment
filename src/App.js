@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import UserInput from './UserInput/UserInput';
+import UserOutput from './UserOutput/UserOutput';
+
 class App extends Component {
   render() {
     return (
@@ -42,6 +45,11 @@ class App extends Component {
             components - both with inline styles and stylesheets
           </li>
         </ol>
+
+        <UserInput />
+        <UserOutput />
+        <UserOutput />
+        <UserOutput />
       </div>
     );
   }
