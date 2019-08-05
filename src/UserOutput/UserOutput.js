@@ -1,10 +1,10 @@
 import React from 'react';
 
-const UserOutput = () => {
+const UserOutput = props => {
   return (
     <div>
       <p>Username:</p>
-      <p>(Will be overwritten.)</p>
+      <p>{props.userName}</p>
     </div>
   );
 };

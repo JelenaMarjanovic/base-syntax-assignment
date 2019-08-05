@@ -47,9 +47,9 @@ class App extends Component {
         </ol>
 
         <UserInput />
-        <UserOutput />
-        <UserOutput />
-        <UserOutput />
+        <UserOutput userName="Max" />
+        <UserOutput userName="Max" />
+        <UserOutput userName="Max" />
       </div>
     );
   }
